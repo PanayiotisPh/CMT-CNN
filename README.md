@@ -30,9 +30,9 @@ optional arguments:
 ![Loss of pain database](./fig/loss.png)
 
 
-|Model  |  Dataset | Learning Rate |   LR Scheduler | Optimizer |  Weight decay |   Acc@1  |
-|-------|:--------:|:------:|:----:|:--------:|:-------:|:--------:|:-------:|
-|CMT-Ti |  pain-database |  6e-5  | Cosine LR|  AdamW   |  1e-5   |  82.55%  |
+|Model  |     Dataset    | Learning Rate |   LR Scheduler | Optimizer |  Weight decay |   Acc@1  |
+|-------|:--------------:|:-------------:|:--------------:|:---------:|:-------------:|:--------:|
+|CMT-Ti |  pain-database |  6e-5         | Cosine LR      |  AdamW    |  1e-5         |  82.55%  |
 
 
 ---
