@@ -2,25 +2,6 @@
 
 A PyTorch implementation of CMT based on paper [CMT: Convolutional Neural Networks Meet Vision Transformers](https://arxiv.org/abs/2107.06263v2).
 
-![Network Architecture image from the paper](./fig/cmt_arch.png)
-<p align=center><b>Network Overview</b></p>
-
----
-
-![Network Architecture image from the paper](./fig/cmt_variant.png)
-<p align=center><b>CMT variants structure overview</b></p>
-
----
-## Number of Parameters
-|Model  |  # Params of the paper    | # Parames of this implement | MACs(G) |
-|-------|:-------------------------:|:---------------------------:|:-------:|
-|CMT-Ti |         9.49 M            |         10.32 M             |  1.21   |
-|CMT-XS |        15.24 M            |         16.40 M             |  2.04   |
-|CMT-S  |        25.14 M            |         27.38 M             |  3.88   |
-|CMT-B  |        45.72 M            |         47.06 M             |  6.83   |
-
----
-
 ## Usage
 ### Training
 ```bash=
@@ -44,21 +25,21 @@ optional arguments:
 
 ## Experiments Results (Cifar-10)
 
-![Accuracy of Cifar10](./fig/cifar10_result.png)
+![Accuracy of pain databse](./fig/acc.png)
 
-![Loss of Cifar10](./fig/cifar10_result_loss.png)
+![Loss of pain database](./fig/loss.png)
 
 
-|Model  |  Dataset | Learning Rate |   LR Scheduler | Optimizer |  Weight decay |   Acc@1  |  Acc@5  |
+|Model  |  Dataset | Learning Rate |   LR Scheduler | Optimizer |  Weight decay |   Acc@1  |
 |-------|:--------:|:------:|:----:|:--------:|:-------:|:--------:|:-------:|
-|CMT-Ti |  Cifar10 |  6e-5  | Cosine LR|  AdamW   |  1e-5   |  88.16%  |  99.49% |
+|CMT-Ti |  pain-database |  6e-5  | Cosine LR|  AdamW   |  1e-5   |  82.55%  |
 
 
 ---
-
-## TODOs
-- [ ] Train on the cifar-10 dataset (Due to the computation limit).
-
+## Requirements
+python version 10
+cuda 12.1
+pytorch (download from https://pytorch.org)
 ---
 
 ## Citation
@@ -72,6 +53,3 @@ optional arguments:
       primaryClass={cs.CV}}
 
 ---
-
-# Author
-**Hong-Jia Chen**
