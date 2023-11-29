@@ -37,9 +37,11 @@ optional arguments:
 
 ---
 ## Requirements
+```bash=
 python version 10
 cuda 12.1
 pytorch (download from https://pytorch.org)
+```
 ---
 
 ## Citation
