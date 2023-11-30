@@ -3,6 +3,18 @@
 A PyTorch implementation of CMT based on paper [CMT: Convolutional Neural Networks Meet Vision Transformers](https://arxiv.org/abs/2107.06263v2).
 
 ## Usage
+### How to use
+#### Dataset path
+```bash=
+Change the current path that exist in utils.py with your own image dataset path
+```
+#### Mean and Std calculator
+```bash=
+If you want to calculate the average std and mean of your whole dataset
+Change the current path that exist in mean-std-calculator.py with your own path.
+The results can be used to replace the values in T.Normalize() that exist in
+main.py and utils.py.
+```
 ### Training
 ```bash=
 python main.py
@@ -23,7 +35,7 @@ optional arguments:
 
 ---
 
-## Experiments Results (Cifar-10)
+## Example usage with a binary classification of images depicting pain reaction
 
 ![Accuracy of pain databse](./fig/acc.png)
 
